@@ -18,7 +18,7 @@
         nativeBuildInputs = [ pkgs.gtk3 pkgs.sassc ];
         propagatedUserEnvPkgs = [ pkgs.gtk-engine-murrine ];
         installPhase = ''
-          bash ./install.sh -t grey,orange --tweaks Nord,Gruvbox,compact -d $out/share/themes
+          bash ./install.sh -t grey orange --tweaks Nord Gruvbox compact -d $out/share/themes
         '';
         meta = with pkgs.lib; {
           description = "Magnetic GTK theme (Eliver, flake)";
